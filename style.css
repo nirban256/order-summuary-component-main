@@ -1,0 +1,135 @@
+:root {
+    --primary-color-1: hsl(225, 100%, 94%);
+    --primary-color-2: hsl(245, 75%, 52%);
+
+    --secondary-color-1: hsl(225, 100%, 98%);
+    --secondary-color-2: hsl(224, 23%, 55%);
+    --secondary-color-3: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1, h4{
+    color: var(--secondary-color-3);
+    font-weight: 900;
+}
+
+.container{
+    width: 30%;
+    text-align: center;
+    background-color: var(--secondary-color-1);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px hsla(224, 23%, 55%, 0.055);
+    transition: width 0.5s;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.top{
+    padding: 0 40px 0 40px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color-2);
+}
+
+.plan{
+    margin: 0 40px 10px 40px;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    background-color: hsla(224, 23%, 55%, 0.068);
+    border-radius: 10px;
+}
+
+.price{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.price > h4{
+    margin: 0;
+}
+
+.price > p{
+    margin: 5px;
+}
+
+.icon{
+    max-height: 40px;
+    padding-top: 10px;
+}
+
+.change{
+    text-decoration: underline;
+    border: none;
+    background: transparent;
+    color: var(--primary-color-2);
+    font-weight: 700;
+    padding-left: 85px;
+}
+
+.change:hover{
+    cursor: pointer;
+}
+
+.bottom>:first-child{
+    border: none;
+    text-decoration: none;
+    background: var(--primary-color-2);
+    border-radius: 10px;
+    color: var(--primary-color-1);
+    padding: 15px 80px 15px 80px;
+    margin: 10px 40px 10px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    filter: drop-shadow(0px 20px 15px hsla(245, 75%, 52%, 0.356));
+}
+
+.bottom>:first-child:hover{
+    cursor: pointer;
+}
+
+.bottom>:nth-child(2){
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color-2);
+    margin: 15px 0 40px 0;
+}
+
+.bottom>:nth-child(2):hover{
+    cursor: pointer;
+}
+
+@media (min-width: 501px){
+    body{
+        background: var(--primary-color-1) url('images/pattern-background-desktop.svg') no-repeat top right;
+    }
+}
+
+@media (max-width: 500px){
+    body{
+        background: var(--primary-color-1) url('images/pattern-background-mobile.svg') no-repeat top right;
+    }
+}
